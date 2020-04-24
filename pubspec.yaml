@@ -28,7 +28,7 @@ dependencies:
   sunny_dart: ^0.5.5
 
   # Formatting/parsing of dates
-  intl: ^0.16.1
+  intl: ^0.16.0
 
 dev_dependencies:
   flutter_test:
