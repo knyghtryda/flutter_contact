@@ -52,6 +52,10 @@ fun ContentResolver.findContactById(identifier: String): Cursor? {
   return query(ContactsContract.Data.CONTENT_URI, contactProjections, "${ContactsContract.Data.CONTACT_ID} = ?", arrayOf(identifier), null)
 }
 
+fun ContentResolver.findContactByLookupKey(lookupKey: String): Cursor? {
+  return query(ContactsContract.Data.CONTENT_URI, contactProjections, "${ContactsContract.Data.LOOKUP_KEY} = ?", arrayOf(lookupKey), null)
+}
+
 /**
  * Builds the list of contacts from the cursor
  * @param cursor

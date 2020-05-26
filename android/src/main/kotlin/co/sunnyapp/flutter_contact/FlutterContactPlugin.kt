@@ -129,7 +129,7 @@ class FlutterContactPlugin(private val registrar: Registrar) : MethodCallHandler
   }
 
 
-  fun getContact(identifier: ContactId, withThumbnails: Boolean,
+  fun getContact(lookupKey: String?, identifier: ContactId, withThumbnails: Boolean,
                          photoHighResolution: Boolean): Struct {
    val contact = getContactRecord(identifier, withThumbnails, photoHighResolution)
     return contact.toMap()
