@@ -221,10 +221,12 @@ interface ResolverExtensions {
       val stream = ByteArrayOutputStream()
       return try {
         val bitmap = android.graphics.BitmapFactory.decodeStream(input)
-        bitmap.compress(Bitmap.CompressFormat.PNG, 100, stream)
-
-        stream.toByteArray()
-
+        if (bitmap == null) {
+          null
+        } else {
+          bitmap.compress(Bitmap.CompressFormat.PNG, 100, stream)
+          stream.toByteArray()
+        }
       } catch (e: Exception) {
         print("Unable to fetch contact image: $e")
         null
