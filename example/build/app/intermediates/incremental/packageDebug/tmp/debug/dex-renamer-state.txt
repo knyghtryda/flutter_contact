@@ -1,0 +1,4 @@
+#Thu Jun 04 10:05:51 PDT 2020
+base.0=C\:\\Users\\yanco\\Documents\\GitHub\\flutter_contact\\example\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
