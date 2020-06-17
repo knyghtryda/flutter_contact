@@ -6,6 +6,7 @@ import 'package:equatable/equatable.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_contact/contacts.dart';
 import 'package:sunny_dart/time.dart';
+import 'package:characters/characters.dart';
 
 class Contact {
   Contact(
@@ -109,8 +110,8 @@ class Contact {
   bool get hasAvatar => avatar?.isNotEmpty == true;
 
   String initials() {
-    return ((this.givenName?.isNotEmpty == true ? this.givenName[0] : "") +
-            (this.familyName?.isNotEmpty == true ? this.familyName[0] : ""))
+    return ((this.givenName?.isNotEmpty == true ? this.givenName.characters.first.toString() : "") +
+            (this.familyName?.isNotEmpty == true ? this.familyName.characters.first.toString() : ""))
         .toUpperCase();
   }
 

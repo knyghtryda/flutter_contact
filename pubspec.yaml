@@ -15,6 +15,9 @@ dependencies:
   logging: ^0.11.4
   logging_config: ^0.4.7
 
+  #Adds Support for full unicode when processing names
+  characters: ^1.0.0
+
   # Simple equality cases
   equatable: ^1.0.2
 
