@@ -11,7 +11,7 @@ import 'mock_contact_service.dart';
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   const MethodChannel channel =
-      MethodChannel('github.com/sunnyapp/flutter_contact');
+      MethodChannel('github.com/sunnyapp/flutter_unified_contact');
   final mock = ContactsMocks();
   channel.setMockMethodCallHandler(mock.handler);
 
@@ -250,12 +250,15 @@ void main() {
   test('should provide a map of the contact', () {
     Contact contact = Contact(givenName: "givenName", familyName: "familyName");
     expect(contact.toMap(), {
-      "identifier": null,
-      "displayName": null,
-      "givenName": "givenName",
-      "middleName": null,
-      "familyName": "familyName",
-      "lastModified": null,
+      'identifier': null,
+      'displayName': null,
+      "givenName": 'givenName',
+      'middleName': null,
+      'familyName': 'familyName',
+      'lastModified': null,
+      'unifiedContactId': null,
+      "singleContactId": null,
+      'otherKeys': {},
       "socialProfiles": [],
       "dates": [],
       "urls": [],
