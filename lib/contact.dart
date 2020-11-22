@@ -10,6 +10,7 @@ import 'package:sunny_dart/helpers.dart';
 import 'package:sunny_dart/helpers/hash_codes.dart';
 import 'package:sunny_dart/sunny_dart.dart';
 import 'package:sunny_dart/time/date_components.dart';
+import 'package:characters/characters.dart';
 
 enum ContactMode { single, unified }
 
