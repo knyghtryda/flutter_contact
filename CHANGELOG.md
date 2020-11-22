@@ -1,3 +1,15 @@
+## 0.6.4
+ * Fixed issue with lastModified timestamp on Android.
+ * Improved permissions and split example project into different files
+
+## 0.6.3
+ * Fixed issue where company was returned instead of jobTitle (thanks to Martin Krupa)
+
+## 0.6.2
+
+* Fixed issue fetching contact by id.  
+* Added example of full-text search using full_text_search plugin to the example
+
 ## 0.6.1
 
 There shouldn't be any breaking changes, but there are significant changes to how things work under the hood  

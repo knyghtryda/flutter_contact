@@ -15,8 +15,22 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.0-nullsafety.1"
+  built_collection:
+    dependency: transitive
+    description:
+      name: built_collection
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "4.3.2"
+  built_value:
+    dependency: transitive
+    description:
+      name: characters
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "7.1.0"
   characters:
-    dependency: "direct main"
+    dependency: transitive
     description:
       name: characters
       url: "https://pub.dartlang.org"
@@ -92,6 +106,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.2.0-nullsafety.1"
+  fixnum:
+    dependency: transitive
+    description:
+      name: fixnum
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.10.11"
   flutter:
     dependency: "direct main"
     description: flutter
@@ -192,7 +213,21 @@ packages:
       name: pedantic
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.9.1"
+    version: "1.9.0"
+  permission_handler:
+    dependency: "direct main"
+    description:
+      name: permission_handler
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "5.0.1+1"
+  permission_handler_platform_interface:
+    dependency: transitive
+    description:
+      name: permission_handler_platform_interface
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.0.1"
   platform_detect:
     dependency: transitive
     description:
@@ -271,12 +306,10 @@ packages:
   sunny_dart:
     dependency: "direct main"
     description:
-      path: "."
-      ref: HEAD
-      resolved-ref: b30d00729cb85a44619c1199e13142ba05fe82d5
-      url: "https://github.com/knyghtryda/sunny_dart.git"
-    source: git
-    version: "0.5.8+3"
+      name: sunny_dart
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.5.8"
   term_glyph:
     dependency: transitive
     description:
